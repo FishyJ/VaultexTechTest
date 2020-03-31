@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29920.165
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VaultexTechTest.Domain", "VaultexTechTest.Domain\VaultexTechTest.Domain.csproj", "{68DEA6AF-26E9-4596-8814-A551035D2FD0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VaultexTechTest.Data", "VaultexTechTest.Data\VaultexTechTest.Data.csproj", "{68C65650-3505-4114-9F6D-0D647BA9CADE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{68DEA6AF-26E9-4596-8814-A551035D2FD0} = {68DEA6AF-26E9-4596-8814-A551035D2FD0}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VaultexTechTest.ConsoleApp", "VaultexTechTest.ConsoleApp\VaultexTechTest.ConsoleApp.csproj", "{7665F641-7E01-436A-9715-69C08A44E995}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VaultexTechTest.WebAPI", "VaultexTechTest.WebAPI\VaultexTechTest.WebAPI.csproj", "{2E3BD380-F682-4B5B-BD2F-CF6FE16F2B67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{29D9B68E-46AB-4CD5-B1E1-BCA45E0655D2}"
+	ProjectSection(SolutionItems) = preProject
+		VaultextTechTest_SeedData.sql = VaultextTechTest_SeedData.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BackupOfDB", "BackupOfDB", "{4470C88F-AD62-4315-A33D-77B8E6ABEE82}"
+	ProjectSection(SolutionItems) = preProject
+		VaultexTechTest.7z = VaultexTechTest.7z
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68DEA6AF-26E9-4596-8814-A551035D2FD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68DEA6AF-26E9-4596-8814-A551035D2FD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68DEA6AF-26E9-4596-8814-A551035D2FD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68DEA6AF-26E9-4596-8814-A551035D2FD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68C65650-3505-4114-9F6D-0D647BA9CADE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68C65650-3505-4114-9F6D-0D647BA9CADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68C65650-3505-4114-9F6D-0D647BA9CADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68C65650-3505-4114-9F6D-0D647BA9CADE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7665F641-7E01-436A-9715-69C08A44E995}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7665F641-7E01-436A-9715-69C08A44E995}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7665F641-7E01-436A-9715-69C08A44E995}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7665F641-7E01-436A-9715-69C08A44E995}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E3BD380-F682-4B5B-BD2F-CF6FE16F2B67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E3BD380-F682-4B5B-BD2F-CF6FE16F2B67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E3BD380-F682-4B5B-BD2F-CF6FE16F2B67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E3BD380-F682-4B5B-BD2F-CF6FE16F2B67}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {24A39948-1AA0-42AE-8E03-6255C60753A9}
+	EndGlobalSection
+EndGlobal

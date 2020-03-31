@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/VaultexTechTest
+/VaultexTechTest.ConsoleApp/bin/Debug/netcoreapp3.1
+/VaultexTechTest.ConsoleApp/obj
+/VaultexTechTest.Data/bin/Debug/netstandard2.1
+/VaultexTechTest.Data/obj
+/VaultexTechTest.Domain/bin/Debug/netstandard2.0
+/VaultexTechTest.Domain/obj
+/VaultexTechTest.WebAPI/bin/Debug/netcoreapp3.1
+/VaultexTechTest.WebAPI/obj
