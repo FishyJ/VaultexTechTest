@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
 using VaultexTechTest.Data;
 using VaultexTechTest.Domain;
@@ -26,6 +27,13 @@ namespace VaultexTechTest.WebAPI.Controllers
         public async Task<ActionResult<IEnumerable<Employee>>> GetEmployees()
         {
             return await _context.Employees.ToListAsync();
+        }
+
+        // GET: api/GetEmployeesByOrganisationNumber
+        [HttpGet(template: "GetEmployeesByOrganisationNumber/{organisationNumber}")]
+        public async Task<ActionResult<IEnumerable<Employee>>> GetEmployeesByOrganisationNumber(string organisationNumber)
+        {
+            return await _context.Employees.Where(e => e.OrganisationNumber == organisationNumber).ToListAsync();
         }
 
         // GET: api/Employees/5
